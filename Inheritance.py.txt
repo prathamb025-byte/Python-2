@@ -1,0 +1,31 @@
+class Person:
+    def __init__(self,name,age):
+        self.name= name
+        self.age = age
+    def show_person(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        
+class Employee(Person):
+    def __init__(self,name,age, employee_ID,salary):
+        super().__init__(name,age)
+        self.employee_ID= employee_ID
+        self.salary = salary
+        
+    def show_employee(self):
+        self.show_person()
+        print("Employee ID:", self.employee_ID)
+        print("Salary:", self.salary)
+        
+class Manager(Employee):
+    def __init__(self,name,age,employee_ID,salary,department):
+        super().__init__(name,age,employee_ID,salary)
+        self.department = department
+        
+    def show_manager(self):
+        self.show_employee()
+        print("Department:",self.department)
+        
+        
+m1 = Manager("Aditya Deshpande",18,"B0070",20000,"CSE") 
+m1.show_manager()

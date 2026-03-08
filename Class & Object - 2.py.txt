@@ -1,0 +1,29 @@
+class Student:
+
+    def __init__(self, name, roll, m1, m2, m3):
+        self.name = name
+        self.roll = roll
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def display(self):
+        print("Name:", self.name)
+        print("Roll Number:", self.roll)
+        print("Marathi:", self.m1)
+        print("Hindi:", self.m2)
+        print("English:", self.m3)
+
+    def calculate(self):
+        total = self.m1 + self.m2 + self.m3
+        avg = total / 3
+        print("Total Marks:", total)
+        print("Average Marks:", avg)
+
+
+
+s1 = Student("Sai Bhosale", 37, 85, 90, 80)
+
+
+s1.display()
+s1.calculate()
