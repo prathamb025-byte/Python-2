@@ -1,0 +1,18 @@
+
+students = ["Aditya", "Rahul", "Sneha"] 
+
+subjects = ("Maths", "Science", "English")
+
+marks = {
+    "Aditya": 85,
+    "Rahul": 90,
+    "Sneha": 85
+}
+
+print("Students:", students)
+print("Subjects:", subjects)
+print("Marks:", marks)
+
+unique_marks = set(marks.values())
+
+print("Unique Marks:", unique_marks)
